@@ -9,7 +9,9 @@ int linear_search(vector options, string lookfor){
 
     std::cout <<a.size()<<std::endl;
     for(int i = 0; i < a.size()-1; i++){
-        if(lookfor == options[i])
+        if(lookfor == options[i]){
+
+        }
     }
 }
 
