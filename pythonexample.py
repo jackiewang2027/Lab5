@@ -24,38 +24,6 @@ def linear_search(container, string):
             print("Time Delta", end_time - begin_time)
             return -1
 
-
-# This is my original writing of binary search but it is slower than the linear on average case for some reason
-# def binary_search(container, string):
-#   og = container
-#   print("Binary search for: ", string)
-#   begin_time = time.time()
-#   print("Beginning time", begin_time)
-#   beforesort = time.time()
-#   container = sorted(container)
-#   aftersort = time.time()
-#   print(aftersort-beforesort, "sort time")
-# print("first sorted", len(container))
-# print(len(container), "first len")
-#   while True:
-#       if container[len(container)//2] < string and len(container) > 1:
-#           container = container[len(container)//2:]
-# print("other slice", len(container))
-#       elif container[len(container)//2] > string and len(container) > 1:
-#           container = container[:len(container)//2]
-#       elif container[len(container)//2] == string:
-#           end_time = time.time()
-#           print("Time Delta", end_time - begin_time)
-#           return og.index(string)
-#       elif len(container) == 1 and container[0] != string:
-#           end_time = time.time()
-#           print("Not Found In Tuple")
-#           print("Time Delta", end_time - begin_time)
-#           return -1
-#
-#    print("do stuff")
-
-
 # Make binary search function that takes the tuple and string
 def binary_search(container, string):
     print("Binary search for: ", string)
